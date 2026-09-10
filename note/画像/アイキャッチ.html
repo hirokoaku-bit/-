@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 670px;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: "IPAGothic", "IPAゴシック", sans-serif;
+  }
+  .canvas {
+    width: 1280px;
+    height: 670px;
+    background: linear-gradient(135deg, #FBEFE3 0%, #F3DED0 55%, #EAD3C4 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px;
+  }
+  .tag {
+    display: inline-block;
+    align-self: flex-start;
+    background: #4A7C7C;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 26px;
+    border-radius: 999px;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+  }
+  .title {
+    font-size: 62px;
+    font-weight: bold;
+    color: #33404D;
+    line-height: 1.35;
+    margin: 0 0 28px 0;
+  }
+  .title .accent {
+    color: #C96A45;
+  }
+  .sub {
+    font-size: 26px;
+    color: #5B6470;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 830px;
+  }
+  .deco-circle {
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(74, 124, 124, 0.15);
+  }
+  .deco-circle2 {
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(201, 106, 69, 0.18);
+  }
+  .check {
+    position: absolute;
+    right: 110px;
+    bottom: 90px;
+    width: 90px;
+    height: 90px;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="deco-circle"></div>
+    <div class="deco-circle2"></div>
+    <svg class="check" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="#FFFFFF" opacity="0.9"/>
+      <path d="M30 52 L45 66 L72 34" stroke="#4A7C7C" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="tag">60代からの働き方案内</div>
+    <div class="title">
+      60歳からでも<br>
+      <span class="accent">「定年なし」</span>で働ける<br>
+      職場の見分け方
+    </div>
+    <div class="sub">
+      歯科衛生士歴37年・10ヶ月で終わった再雇用を経験した私が伝える、応募前チェックリスト
+    </div>
+  </div>
+</body>
+</html>
