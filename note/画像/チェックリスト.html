@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  html, body { margin: 0; padding: 0; }
+  * { box-sizing: border-box; font-family: "IPAGothic", "IPAゴシック", sans-serif; }
+  .card {
+    width: 900px;
+    height: 680px;
+    background: #FDF9F4;
+    border-radius: 24px;
+    padding: 48px 56px;
+    position: relative;
+  }
+  .tag {
+    display: inline-block;
+    background: #4A7C7C;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 22px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #33404D;
+    margin: 0 0 34px 0;
+  }
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #E7DDD1;
+  }
+  .item:last-child {
+    border-bottom: none;
+  }
+  .box {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 8px;
+    border: 3px solid #4A7C7C;
+    margin-top: 2px;
+  }
+  .item-text {
+    font-size: 24px;
+    color: #33404D;
+    line-height: 1.5;
+  }
+  .item-text .sub {
+    display: block;
+    font-size: 17px;
+    color: #898781;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">保存版</div>
+    <div class="title">応募前セルフチェックリスト</div>
+
+    <div class="item">
+      <div class="box"></div>
+      <div class="item-text">定年制度の有無を確認した
+        <span class="sub">定年なし/65歳定年/70歳定年 など</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box"></div>
+      <div class="item-text">契約更新の条件を確認した
+        <span class="sub">自動更新か、都度審査か</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box"></div>
+      <div class="item-text">給与が変わるタイミングを確認した
+        <span class="sub">年齢や契約更新時に下がることがあるか</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box"></div>
+      <div class="item-text">賞与・退職金の有無を確認した</div>
+    </div>
+    <div class="item">
+      <div class="box"></div>
+      <div class="item-text">スタッフの年齢層を確認した
+        <span class="sub">求人サイトの写真、HP、SNS、口コミなど</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

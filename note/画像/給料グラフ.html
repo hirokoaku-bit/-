@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  html, body { margin: 0; padding: 0; }
+  * { box-sizing: border-box; font-family: "IPAGothic", "IPAゴシック", sans-serif; }
+  .card {
+    width: 900px;
+    height: 560px;
+    background: #FDF9F4;
+    border-radius: 24px;
+    padding: 48px 56px;
+    position: relative;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #33404D;
+    margin: 0 0 6px 0;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #898781;
+    margin: 0 0 40px 0;
+  }
+  .callout-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  .chart-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 90px;
+    height: 260px;
+    position: relative;
+  }
+  .bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .value-label {
+    font-size: 26px;
+    font-weight: bold;
+    color: #33404D;
+    margin-bottom: 10px;
+  }
+  .bar {
+    width: 140px;
+    border-radius: 10px 10px 4px 4px;
+  }
+  .bar.before {
+    height: 226px;
+    background: #9CC4C0;
+  }
+  .bar.after {
+    height: 184px;
+    background: #3F6E68;
+  }
+  .cat-label {
+    font-size: 20px;
+    color: #52514E;
+    margin-top: 14px;
+    font-weight: bold;
+  }
+  .arrow-callout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F6E6DB;
+    border-radius: 999px;
+    padding: 10px 26px;
+  }
+  .arrow-callout .arrow {
+    color: #C96A45;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .arrow-callout .text {
+    color: #C96A45;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .source {
+    position: absolute;
+    bottom: 28px;
+    left: 56px;
+    font-size: 14px;
+    color: #898781;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">60〜64歳になると、給料はどれくらい下がる?</div>
+    <div class="subtitle">平均月給の比較(賃金構造基本統計調査より)</div>
+
+    <div class="callout-row">
+      <div class="arrow-callout">
+        <span class="arrow">▼</span>
+        <span class="text">約2割ダウン</span>
+      </div>
+    </div>
+
+    <div class="chart-area">
+      <div class="bar-group">
+        <div class="value-label">37.6万円</div>
+        <div class="bar before"></div>
+        <div class="cat-label">55〜59歳</div>
+      </div>
+      <div class="bar-group">
+        <div class="value-label">30.6万円</div>
+        <div class="bar after"></div>
+        <div class="cat-label">60〜64歳</div>
+      </div>
+    </div>
+    <div class="source">出典:厚生労働省「賃金構造基本統計調査」をもとに作成(平均月給)</div>
+  </div>
+</body>
+</html>
